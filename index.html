@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <i class="fa-solid fa-mug-saucer" id="nav_logo">Cafe</i>
+
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn-default">Peça aqui</button>
+
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn-default">Peça aqui</button>
+      </div>
+    </header>
+
+    <main id="content">
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">
+            O sabor que vai até
+            <span>você</span>
+          </h1>
+
+          <p class="description">Cada gole, um instante de prazer.</p>
+
+          <div id="cta_buttons">
+            <a href="#" class="btn-default"> Ver cardápio </a>
+
+            <a href="tel:+55555555555" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (51) 92342-3243
+            </a>
+          </div>
+
+          <div class="social-media-buttons">
+            <a href="">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="banner">
+          <img src="src/images/ .png" alt="" />
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Nossos cafés especiais</h3>
+
+        <div id="dishes">
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/expresso.png" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Café expresso</h3>
+
+            <span class="dish-description">
+              O café expresso (ou espresso, no original italiano) é uma forma
+              concentrada de café, feita ao passar água quente sob alta pressão
+              por uma pequena quantidade de café moído fino. É a base de muitas
+              bebidas famosas como cappuccino, latte, macchiato e mocha.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(50+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$20,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/expresso.png" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Cappuccino</h3>
+
+            <span class="dish-description">
+              Um cappuccino é uma bebida cremosa e aromática feita com café
+              espresso e leite. Seu nome vem de "Cappuccini", uma ordem de
+              monges franciscanos cujos hábitos (roupas) tinham a cor marrom
+              parecida com a bebida.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(50+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$15,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/expresso.png" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Café com leite</h3>
+
+            <span class="dish-description">
+              Um café com leite é uma bebida quente tradicional que combina café
+              coado ou expresso com leite quente em proporções geralmente
+              iguais. Visualmente, apresenta uma coloração marrom-clara, mais
+              suave que o café puro, com uma superfície lisa e cremosa,
+              especialmente quando o leite é vaporizado ou aquecido até formar
+              uma leve espuma.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(50+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$10,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/expresso.png" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Latte Macchiato</h3>
+
+            <span class="dish-description">
+              O latte macchiato é uma bebida italiana cujo nome significa "leite
+              manchado". Ao contrário do caffè macchiato (que é café com um
+              pingo de leite), o latte macchiato é leite vaporizado com uma
+              pequena dose de espresso adicionada por cima. Isso cria camadas
+              visíveis: leite quente na base, uma leve camada de espuma no topo
+              e o espresso "manchando" o meio da bebida com sua cor escura.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(50+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$25,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Nossa loja</h2>
+        <h3 class="section-subtitle">Nossos equipamentos especializados</h3>
+
+        <div id="dishes">
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/cafeteira.png" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Cafeteira Italiana</h3>
+
+            <span class="dish-description">
+              A cafeteira italiana, também conhecida como Moka, é um utensílio
+              tradicional para preparo de café, especialmente popular na Itália
+              e em outros países da Europa. Ela prepara o café por meio de
+              pressão gerada a partir da água aquecida, que sobe através do pó e
+              resulta em uma bebida encorpada e aromática.</span
+            >
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(50+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$120,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/ganso.png" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Chaleira pescoso de ganso</h3>
+
+            <span class="dish-description">
+              A chaleira pescoço de ganso é o utensílio perfeito para quem busca
+              precisão e controle no preparo de café filtrado. Seu bico fino e
+              curvado permite um fluxo contínuo e direcionado da água, essencial
+              para métodos como V60, Chemex, Kalita e outros tipos de extração
+              manual.</span
+            >
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(50+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$89,90</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img
+              src="src/images/prensafrancesa.png"
+              class="dish-image"
+              alt=""
+            />
+
+            <h3 class="dish-title">Prensa Francesa</h3>
+
+            <span class="dish-description"
+              >A prensa francesa é um método clássico e elegante de preparo de
+              café, ideal para quem busca uma bebida mais suave, aromática e com
+              corpo. Seu funcionamento é simples, sem necessidade de
+              eletricidade, valorizando o sabor natural do grão.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(50+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$90,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/moedor.png" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Moedor manual</h3>
+
+            <span class="dish-description"
+              >Ideal para os amantes de café que valorizam frescor e sabor, este
+              moedor manual combina eficiência, design moderno e praticidade.
+              Com um sistema de moagem ajustável, permite escolher a
+              granulometria ideal para diferentes métodos de preparo — como
+              prensa francesa, cafeteira italiana ou coador.</span
+            >
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(50+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$25,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <img src="src/images/chef.png" id="testimonial_chef" alt="" />
+
+        <div id="testimonials_content">
+          <h2 class="section-title">Depoimentos</h2>
+          <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <img src="src/images/avatar.png" class="feedback-avatar" alt="" />
+
+              <div class="feedback-content">
+                <p>
+                  Eduardo M.
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  “Sou exigente com café, e aqui encontrei o equilíbrio ideal
+                  entre sabor e atendimento. É meu refúgio das tardes corridas.”
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img src="src/images/avatar.png" class="feedback-avatar" alt="" />
+
+              <div class="feedback-content">
+                <p>
+                  Juliana S.
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  “Aquele expresso duplo salvou minha segunda-feira. Além de
+                  delicioso, veio rápido e com um aroma incrível. Atendimento
+                  nota 10!”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-default">Ver mais avaliações</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="src/images/wave.svg" alt="" />
+
+      <div id="footer_items">
+        <span id="copyright"> &copy 2025 João Stein </span>
+
+        <div class="social-media-buttons">
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+  </body>
+</html>
